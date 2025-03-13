@@ -257,7 +257,7 @@ button {
   letter-spacing: -0.02em;
   text-align: center;
   color: #fff;
-  text-transform: none;
+  font-style: normal;
 }
 .footer-menu-list {
 }
