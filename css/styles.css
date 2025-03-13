@@ -1,16 +1,38 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Montserrat" sans-serif;
   background: #fafafa;
 }
+
 ul {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
 }
+
+button {
+  cursor: pointer;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+
+.accent {
+  color: #fd9222;
+}
+
 /*--------------HEDER------------*/
 .header-logo {
   font-weight: 700;
@@ -19,9 +41,11 @@ a {
   letter-spacing: -0.03em;
   color: #111;
 }
+
 .header-logo-italic {
   font-style: italic;
 }
+
 .header-menu-link {
   font-weight: 500;
   font-size: 14px;
@@ -29,9 +53,17 @@ a {
   letter-spacing: -0.02em;
   color: #111;
 }
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: #fd9222;
+}
+
+/*-------------HERO---------*/
 .hero {
   background-color: #1e1823;
 }
+
 .hero-title {
   font-weight: 500;
   font-size: 28px;
@@ -39,153 +71,202 @@ a {
   letter-spacing: -0.03em;
   color: #fff;
 }
+
 .hero-btn {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
   background: #fd9222;
 }
+
 .hero-anchor-link {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
 }
+
 .hero-scrol-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.03em;
   color: #fff;
 }
+
+/*-------------HERO---------*/
+/*---------FEATURES----------*/
+
 .features {
-  background: #1e1823;
+  background-color: #1e1823;
 }
+
 .features-list {
 }
+
 .features-item {
 }
+
 .features-subtitle {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
 }
+
 .features-item-text {
   font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
+
+/*---------FEATURES----------*/
+/*-----------TASTE-----------*/
+
 .taste {
 }
+
 .taste-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #111;
-}
-.title-orange {
-  color: #fd9222;
-}
-.taste-text {
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: #111;
-}
-.taste-list {
-}
-.taste-item-orange {
-  background: #fd9222;
-}
-.taste-item-img {
-}
-.taste-item-subtitle-colors {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #fff;
-}
-.taste-item-white {
-  background: #fff;
-}
-.taste-item-subtitle {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.28;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #111;
-}
-.taste-item-blue {
-  background: #1e1823;
-}
-.made {
-}
-.made-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
 }
 
-.made-img {
+.taste-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
 }
+
+.taste-list {
+}
+
+.taste-item {
+}
+
+.taste-item-image {
+}
+
+.taste-subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+/*-----------TASTE-----------*/
+/*-----------MADE-----------*/
+
+.made {
+}
+
+.made-title {
+}
+
+.made-image {
+}
+
 .made-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   color: #111;
 }
+
 .made-list {
 }
+
 .made-item {
 }
+
 .made-item-text {
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111;
 }
+
+/*-----------MADE-----------*/
+/*-----------REVIEW-----------*/
+
 .review {
 }
+
 .review-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .review-list {
 }
+
 .review-item {
 }
-.review-item-img {
+
+.review-image {
 }
-.review-item-subtitle {
+
+.review-subtitle {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
   color: #111;
 }
+
 .review-item-text {
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
 }
+
 .review-btn {
   font-weight: 600;
   font-size: 18px;
   color: #111;
+}
+
+/*-----------REVIEW-----------*/
+/*-----------R-----------*/
+.footer {
+  background-color: #1e1823;
+}
+.footer-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.footer-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fff;
+}
+.footer-address {
+}
+.footer-address-list {
+}
+.footer-address-item {
+}
+.footer-address-link {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+  text-transform: none;
+}
+.footer-menu-list {
+}
+.footer-menu-item {
+}
+.footer-menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #fff;
 }
