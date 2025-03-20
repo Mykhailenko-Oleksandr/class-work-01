@@ -55,8 +55,11 @@ h6 {
 /*--------------HEDER------------*/
 
 .heder {
-  padding-top: 28px;
-  padding-bottom: 28px;
+}
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -65,10 +68,20 @@ h6 {
   line-height: 1.11;
   letter-spacing: -0.03em;
   color: #111;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .header-logo-italic {
   font-style: italic;
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 24px;
+}
+
+.header-menu-item {
 }
 
 .header-menu-link {
@@ -77,6 +90,9 @@ h6 {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #111;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  display: block;
 }
 
 .header-menu-link:hover,
@@ -102,6 +118,12 @@ h6 {
   letter-spacing: -0.03em;
   color: #fff;
   margin-bottom: 32px;
+  max-width: 484px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
 }
 
 .hero-btn {
@@ -109,12 +131,20 @@ h6 {
   font-size: 14px;
   color: #fff;
   background: #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  border: none;
+  margin-right: 14px;
 }
 
 .hero-anchor-link {
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
+  border-color: transparent;
+  border: 1px solid #fff;
 }
 
 .hero-scrol-link {
@@ -123,6 +153,7 @@ h6 {
   line-height: 1.29;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-left: auto;
 }
 
 /*-------------HERO---------*/
@@ -137,9 +168,12 @@ h6 {
 .features-list {
   padding-left: 36px;
   padding-right: 36px;
+  display: flex;
+  gap: 70px;
 }
 
 .features-item {
+  flex-basis: calc((100% - 140px) / 3);
 }
 
 .features-subtitle {
@@ -164,6 +198,8 @@ h6 {
 }
 
 .taste-title {
+  min-width: 411px;
+  margin: 0 auto;
   margin-bottom: 28px;
 }
 
@@ -173,10 +209,14 @@ h6 {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
+  max-width: 486px;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
 .taste-list {
+  display: flex;
+  gap: 19px;
 }
 
 .taste-item {
@@ -185,6 +225,7 @@ h6 {
   width: 270px;
   height: 270px;
   padding: 28px 32px;
+  flex-basis: calc((100% - 57px) / 4);
 }
 
 .taste-item-image {
