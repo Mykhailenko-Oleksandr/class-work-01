@@ -118,7 +118,7 @@ h6 {
   letter-spacing: -0.03em;
   color: #fff;
   margin-bottom: 32px;
-  max-width: 484px;
+  max-width: 450px;
 }
 
 .hero-buttons {
@@ -137,6 +137,12 @@ h6 {
   margin-right: 14px;
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
 .hero-anchor-link {
   font-weight: 600;
   font-size: 14px;
@@ -145,6 +151,12 @@ h6 {
   padding: 14px 40px;
   border-color: transparent;
   border: 1px solid #fff;
+}
+
+.hero-anchor-link:hover,
+.hero-anchor-link:focus {
+  border: 1px solid #fd9222;
+  color: #fd9222;
 }
 
 .hero-scrol-link {
@@ -198,7 +210,7 @@ h6 {
 }
 
 .taste-title {
-  min-width: 411px;
+  max-width: 400px;
   margin: 0 auto;
   margin-bottom: 28px;
 }
@@ -209,7 +221,7 @@ h6 {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
-  max-width: 486px;
+  max-width: 425px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -228,7 +240,16 @@ h6 {
   flex-basis: calc((100% - 57px) / 4);
 }
 
+.taste-item:nth-child(1) {
+  background: #fd9222;
+}
+
+.taste-item:nth-child(3) {
+  background: #1e1823;
+}
+
 .taste-item-image {
+  margin-bottom: 36px;
 }
 
 .taste-subtitle {
@@ -238,6 +259,10 @@ h6 {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+}
+
+.taste-subtitle-white {
+  color: #fff;
 }
 
 /*-----------TASTE-----------*/
@@ -250,6 +275,11 @@ h6 {
 
 .made-title {
   margin-bottom: 50px;
+}
+
+.made-box {
+  display: flex;
+  gap: 20px;
 }
 
 .made-image {
@@ -266,6 +296,7 @@ h6 {
   font-size: 18px;
   line-height: 1.33;
   color: #111;
+  max-width: 305px;
   margin-bottom: 28px;
 }
 
@@ -300,14 +331,24 @@ h6 {
 }
 
 .review-list {
+  display: flex;
+  gap: 28px;
   margin-bottom: 50px;
 }
 
 .review-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
   background: #fff;
+  flex-basis: calc((100% - 56px) / 3);
+  padding-left: 24px;
+  padding-right: 24px;
   padding-bottom: 24px;
 }
 
@@ -330,27 +371,55 @@ h6 {
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
+  max-width: 270px;
 }
 
 .review-btn {
+  display: block;
   font-weight: 600;
   font-size: 18px;
   color: #111;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 14px 40px;
+  min-width: 222px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.review-btn:hover,
+.review-btn:focus {
+  background-color: #fd9222;
+  color: #fff;
 }
 
 /*-----------REVIEW-----------*/
-/*-----------R-----------*/
+/*-----------FOOTER-----------*/
 .footer {
   background-color: #1e1823;
   padding-top: 50px;
   padding-bottom: 86px;
 }
+
+.footer-box-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .footer-title {
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: #fff;
+  max-width: 300px;
+}
+
+.footer-box-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .footer-subtitle {
@@ -382,7 +451,8 @@ h6 {
   font-style: normal;
 }
 .footer-menu-list {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 24px;
   padding-top: 24px;
 }
 .footer-menu-item {
@@ -393,4 +463,58 @@ h6 {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: #fff;
+}
+/*-----------FOOTER-----------*/
+
+.taste-item-hidden-box {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 270px;
+  height: 270px;
+}
+
+.taste-subtitle-hidden-box {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.taste-item-btn {
+  display: flex;
+  gap: 6px;
+}
+
+.taste-item-btn-name {
+  border: none;
+  border-radius: 35px;
+  padding: 6px 16px;
+  min-width: 55px;
+  height: 24px;
+  background-color: #fd9222;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.taste-item-btn-benefits {
+  border: 1px solid #fd9222;
+  border-radius: 35px;
+  padding: 6px 16px;
+  min-width: 93px;
+  height: 24px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #111;
+}
+
+.taste-text-hidden-box {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
+  max-width: 200px;
 }
