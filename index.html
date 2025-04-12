@@ -34,8 +34,13 @@
             <a
               href="./index.html"
               class="header-logo"
-              ><span class="header-logo-italic">SIMPLY</span> CHOCOLATE</a
-            >
+              ><span class="header-logo-italic">SIMPLY&#160;</span>CHOCOLATE
+              <svg
+                class="header-logo-icon"
+                width="21"
+                height="21">
+                <use href="./images/icons.svg#icon-chocolate"></use></svg
+            ></a>
             <ul class="header-menu-list">
               <li class="header-menu-item">
                 <a
@@ -86,6 +91,16 @@
               </a>
             </li>
           </ul>
+          <button
+            class="header-menu-btn"
+            type="button">
+            <svg
+              class="header-menu-btn-icon"
+              width="28"
+              height="28">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -94,8 +109,8 @@
         <div class="container">
           <div class="hero-wrapper">
             <h1 class="hero-title">
-              Treat yourself or a loved one to<br />
-              our finest ingredients for a moment of pure delight!
+              Treat yourself or a loved one to our finest ingredients for a
+              moment of pure delight!
             </h1>
             <div class="hero-buttons">
               <button
@@ -111,19 +126,34 @@
               <a
                 href="#features"
                 class="hero-scrol-link"
-                >scroll down</a
-              >
+                >scroll down
+                <div class="hero-scrol-icon-box">
+                  <svg
+                    class="hero-scrol-icon"
+                    width="16"
+                    height="16">
+                    <use href="./images/icons.svg#icon-angle"></use>
+                  </svg></div
+              ></a>
             </div>
           </div>
         </div>
       </section>
-      <section
+      <!-- <section
         id="features"
         class="features">
         <div class="container">
           <h2 hidden>Features</h2>
           <ul class="features-list">
             <li class="features-item">
+              <div class="features-item-icon-box">
+                <svg
+                  class="features-item-icon"
+                  width="32"
+                  height="32">
+                  <use href="./images/icons.svg#icon-benefits-icon-1"></use>
+                </svg>
+              </div>
               <h3 class="features-subtitle">Unsurpassed taste</h3>
               <p class="features-item-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -133,6 +163,15 @@
               </p>
             </li>
             <li class="features-item">
+              <div class="features-item-icon-box">
+                <svg
+                  class="features-item-icon"
+                  width="32"
+                  height="32">
+                  <use href="./images/icons.svg#icon-benefits-icon-2"></use>
+                </svg>
+              </div>
+              <div class="features-item-icon"></div>
               <h3 class="features-subtitle">Affordable price</h3>
               <p class="features-item-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -143,6 +182,15 @@
               </p>
             </li>
             <li class="features-item">
+              <div class="features-item-icon-box">
+                <svg
+                  class="features-item-icon"
+                  width="32"
+                  height="32">
+                  <use href="./images/icons.svg#icon-benefits-icon-3"></use>
+                </svg>
+              </div>
+              <div class="features-item-icon"></div>
               <h3 class="features-subtitle">Own production</h3>
               <p class="features-item-text">
                 We take pride in our own production process, ensuring that every
@@ -153,8 +201,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="taste">
+      </section> -->
+      <!-- <section class="taste">
         <div class="container">
           <h2 class="taste-title section-title">
             IT ALL ADDS UP TO ONE EXCEPTIONAL
@@ -269,8 +317,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section
+      </section> -->
+      <!-- <section
         id="made"
         class="made">
         <div class="container">
@@ -324,8 +372,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section
+      </section> -->
+      <!-- <section
         id="review"
         class="review">
         <div class="container">
@@ -377,13 +425,14 @@
           </ul>
           <button
             type="button"
-            class="review-btn">
+            class="review-btn"
+            data-modal-open>
             Leave a review
           </button>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-box-top">
           <p class="footer-title">
@@ -411,36 +460,58 @@
             </address>
           </div>
         </div>
-        <ul class="footer-menu-list">
-          <li class="footer-menu-item">
-            <a
-              class="footer-menu-link"
-              href="./index.html"
-              >Home</a
-            >
-          </li>
-          <li class="footer-menu-item">
-            <a
-              class="footer-menu-link"
-              href="#made"
-              >How it’s made?</a
-            >
-          </li>
-          <li class="footer-menu-item">
-            <a
-              class="footer-menu-link"
-              href="#review"
-              >Chocolate is loved</a
-            >
-          </li>
-        </ul>
+        <div class="footer-box-bottom">
+          <ul class="footer-menu-list">
+            <li class="footer-menu-item">
+              <a
+                class="footer-menu-link"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="footer-menu-item">
+              <a
+                class="footer-menu-link"
+                href="#made"
+                >How it’s made?</a
+              >
+            </li>
+            <li class="footer-menu-item">
+              <a
+                class="footer-menu-link"
+                href="#review"
+                >Chocolate is loved</a
+              >
+            </li>
+          </ul>
+          <form class="footer-form">
+            <label
+              class="footer-label"
+              aria-label="footer-email">
+              <input
+                class="footer-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+            /></label>
+            <button
+              class="footer-form-btn"
+              type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
       </div>
-    </footer>
-    <div class="backdrop">
+    </footer> -->
+    <!-- <div
+      class="backdrop is-open"
+      data-modal>
       <div class="modal">
         <button
           class="modal-close-btn"
-          type="button">
+          type="button"
+          data-modal-close>
           <svg
             class="modal-close-icon"
             width="28"
@@ -527,19 +598,26 @@
           </div>
           <div class="modal-field-checkbox">
             <input
-              class="modal-checkbox"
+              class="modal-check visually-hidden"
               type="checkbox"
-              name="privacy-policy"
-              id="privacy-policy"
+              name="policy"
+              id="policy"
+              value="true"
               required />
-            <label for="privacy-policy"
-              ><span class="modal-checkbox-text"
-                >I accept the terms and conditions of the
-                <a
-                  class="modal-link"
-                  href=""
-                  >Privacy Policy</a
-                ></span
+            <label
+              class="modal-check-text"
+              for="policy">
+              <span class="modal-checkbox"
+                ><svg
+                  class="modal-checkbox-icon"
+                  width="10"
+                  height="10">
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              >I accept the terms and conditions of the &nbsp
+              <a
+                class="modal-link"
+                href=""
+                >Privacy Policy</a
               ></label
             >
           </div>
@@ -550,6 +628,7 @@
           </button>
         </form>
       </div>
-    </div>
+    </div> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
