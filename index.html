@@ -318,7 +318,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section
+      <section
         id="made"
         class="made">
         <div class="container">
@@ -326,12 +326,35 @@
             hOW IT’S <span class="accent">made?</span>
           </h2>
           <div class="made-box">
-            <img
-              class="made-image"
-              src="./images/main-image-1.jpg"
-              alt="liquide chocolade"
-              width="600"
-              height="400" />
+            <picture>
+              <source
+                media="(min-width: 1166px)"
+                srcset="
+                  ./images/made/made-image-desk.jpg    1x,
+                  ./images/made/made-image-desk@2x.jpg 2x
+                "
+                alt="liquide chocolade" />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/made/made-image-tab.jpg    1x,
+                  ./images/made/made-image-tab@2x.jpg 2x
+                "
+                alt="liquide chocolade" />
+              <source
+                media="(max-width: 768px)"
+                srcset="
+                  ./images/made/made-image-mob.jpg    1x,
+                  ./images/made/made-image-mob@2x.jpg 2x
+                "
+                alt="liquide chocolade" />
+              <img
+                class="made-image"
+                src="./images/made/made-image-desk.jpg"
+                alt="liquide chocolade"
+                width="600"
+                height="400" />
+            </picture>
             <div class="made-content">
               <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of
@@ -372,7 +395,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- <section
         id="review"
         class="review">

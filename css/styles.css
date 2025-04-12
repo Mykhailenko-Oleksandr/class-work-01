@@ -691,25 +691,24 @@ h6 {
 /*-----------MADE-----------*/
 
 .made {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .made-title {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .made-box {
-  display: flex;
-  gap: 20px;
 }
 
 .made-image {
+  margin-bottom: 20px;
 }
 
 .made-content {
   border-radius: 15px;
-  padding: 32px;
+  padding: 20px 14px;
   background: #fff;
 }
 
@@ -719,7 +718,7 @@ h6 {
   line-height: 1.33;
   color: #111;
   max-width: 350px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .made-list {
@@ -728,8 +727,7 @@ h6 {
 .made-item {
   position: relative;
   padding-left: 16px;
-  margin-bottom: 24px;
-  /* max-width: 452px; */
+  margin-bottom: 18px;
 }
 
 .made-item::before {
@@ -754,6 +752,46 @@ h6 {
   letter-spacing: -0.02em;
   color: #111;
   max-width: 410px;
+}
+
+@media screen and (min-width: 768px) {
+  /* .made .container {
+    padding-left: 45px;
+    padding-right: 45px;
+  } */
+
+  .made {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .made-title {
+    margin-bottom: 50px;
+  }
+
+  .made-content {
+    padding: 32px;
+  }
+
+  .made-subtitle {
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 1166px) {
+  .made {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .made-box {
+    display: flex;
+    gap: 20px;
+  }
+
+  .made-item {
+    margin-bottom: 24px;
+  }
 }
 
 /*-----------MADE-----------*/
