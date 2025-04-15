@@ -934,27 +934,25 @@ h6 {
 /*-----------FOOTER-----------*/
 
 .footer {
-  max-width: 1200px;
   margin: 0 auto;
   background-color: #1e1823;
-  padding-top: 50px;
-  padding-bottom: 86px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .footer-box-top {
-  display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .footer-title {
   font-weight: 500;
-  font-size: 28px;
-  line-height: 1.21;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: -0.02em;
   color: #fff;
   max-width: 300px;
+  margin-bottom: 32px;
 }
 
 .footer-box-contact {
@@ -971,11 +969,14 @@ h6 {
   color: #fff;
   margin-bottom: 14px;
 }
+
 .footer-address {
 }
+
 .footer-address-list {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
+
 .footer-address-item {
 }
 
@@ -993,14 +994,15 @@ h6 {
 }
 
 .footer-box-bottom {
-  display: flex;
-  justify-content: space-between;
 }
 
 .footer-menu-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 32px;
 }
+
 .footer-menu-item {
 }
 
@@ -1023,14 +1025,14 @@ h6 {
 .footer-input {
   border: 1.5px solid rgba(255, 255, 255, 0.15);
   border-radius: 30px;
-  padding: 13px 24px;
-  width: 313px;
-  height: 52px;
+  padding: 14px 18px;
+  width: 207px;
+  height: 45px;
   background-color: transparent;
   padding-left: 24px;
   padding-right: 24px;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: -0.02em;
 }
 
@@ -1039,7 +1041,7 @@ h6 {
 }
 
 .footer-form-btn {
-  padding: 17px 40px;
+  padding: 14px 24px;
   border: none;
   background-color: #fd9222;
   font-weight: 600;
@@ -1053,9 +1055,68 @@ h6 {
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-box-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .footer-title {
+    font-size: 28px;
+    line-height: 1.21;
+    margin-bottom: unset;
+  }
+
+  .footer-address-list {
+    margin-bottom: 50px;
+  }
+
+  .footer-box-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-menu-list {
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: unset;
+  }
+
+  .footer-menu-item-mob {
+    display: none;
+  }
+
+  .footer-input {
+    padding: 14px 24px;
+    width: 232px;
+  }
+
+  .footer-form-btn {
+    padding: 14px 28px;
+  }
 }
 
 @media screen and (min-width: 1166px) {
+  .footer-menu-list {
+    gap: 24px;
+  }
+
+  .footer-input {
+    font-size: 18px;
+    padding: 15px 24px;
+    width: 313px;
+    height: 52px;
+  }
+
+  .footer-form-btn {
+    padding: 17px 33px 18px 32px;
+  }
 }
 
 /*-----------FOOTER-----------*/
@@ -1081,21 +1142,21 @@ h6 {
 }
 
 .modal {
-  width: 517px;
-  min-height: 794px;
+  width: 311px;
+  min-height: 619px;
   border-radius: 15px;
   background-color: #fafafa;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 40px;
+  padding: 32px 24px;
 }
 
 .modal-close-btn {
   position: absolute;
-  top: 26px;
-  right: 26px;
+  top: 14px;
+  right: 14px;
   background-color: transparent;
   border: none;
 }
@@ -1109,22 +1170,24 @@ h6 {
 .modal-title {
   text-align: left;
   max-width: 300px;
-  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 32px;
 }
 
 .modal-form {
 }
 
 .modal-field {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .modal-label {
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .modal-input-wrap {
@@ -1133,11 +1196,11 @@ h6 {
 
 .modal-input {
   border: 1px solid rgba(17, 17, 17, 0.05);
-  border-radius: 13px;
+  border-radius: 8px;
   width: 100%;
-  height: 68px;
+  height: 45px;
   background-color: transparent;
-  padding-left: 68px;
+  padding-left: 43px;
   outline: transparent;
   transition: border-color 200ms ease;
 }
@@ -1154,7 +1217,7 @@ h6 {
   fill: transparent;
   stroke: #404040;
   position: absolute;
-  left: 24px;
+  left: 18px;
   top: 50%;
   transform: translateY(-50%);
   transition: stroke 200ms ease;
@@ -1162,24 +1225,28 @@ h6 {
 
 .modal-textarea {
   border: 1px solid rgba(17, 17, 17, 0.05);
-  border-radius: 13px;
+  border-radius: 8px;
   width: 100%;
-  height: 137px;
+  height: 91px;
   background-color: transparent;
-  padding: 8px 16px;
+  padding: 14px 18px;
   outline: transparent;
   resize: none;
   transition: border-color 200ms ease;
+}
+
+.modal-textarea::placeholder {
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
 }
 
 .modal-textarea:focus {
   border-color: #fd9222;
 }
 
-/* ---------------------------- */
-
 .modal-field-checkbox {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .modal-check {
@@ -1189,8 +1256,8 @@ h6 {
 .modal-check-text {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 1.33;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
   .modal-link {
@@ -1203,7 +1270,7 @@ h6 {
 .modal-checkbox {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-shrink: 0;
   margin-right: 12px;
   width: 20px;
   height: 20px;
@@ -1241,4 +1308,75 @@ h6 {
   background-color: #fcf1e0;
   color: #fd9222;
 }
-/* ----------------------------- */
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 517px;
+    min-height: 794px;
+    padding: 40px;
+  }
+
+  .modal-close-btn {
+    top: 26px;
+    right: 26px;
+  }
+
+  .modal-close-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .modal-title {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 40px;
+  }
+
+  .modal-title-new-line {
+    display: none;
+  }
+
+  .modal-field {
+    margin-bottom: 18px;
+  }
+
+  .modal-label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .modal-input {
+    height: 68px;
+    border-radius: 13px;
+    padding-left: 68px;
+  }
+
+  .modal-icon {
+    left: 24px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .modal-textarea {
+    border-radius: 13px;
+    height: 137px;
+    padding: 22px 24px;
+  }
+
+  .modal-textarea::placeholder {
+    font-size: 18px;
+  }
+
+  .modal-field-checkbox {
+    margin-bottom: 40px;
+  }
+
+  .modal-check-text {
+    font-size: 14px;
+    align-items: center;
+  }
+
+  .modal-checkbox {
+    align-items: center;
+  }
+}
